@@ -1,192 +1,91 @@
+/* Main League Style */
 @import url(//db.onlinewebfonts.com/c/2c37f3699d9728b566e9bdc5b11e5180?family=BeaufortW01-Regular);
-@import url('https://fonts.googleapis.com/css?family=Gelasio&display=swap');
 
 body {
-  font-family: BeaufortW01-Regular;
-  margin: 2em;
-  background: url('https://playruneterra.com/assets/80f5408412dfae83dc7eeaf3a5d42654e4a9fc9a/static/image/general/background-dark-grey-noise.jpg');
-  -webkit-font-smoothing: antialiased;
-  scroll-behavior: smooth;
-}
-
-.container {
-    opacity: 0.
-}
-
-h1 {
-  font-style: italic;
-  color: #F1EFEF;
-}
-p{
-  color: #F1EFEF;
-}
-
-.header {
-    height: 400px;
-    background: url('https://cdn1.sixmorevodka.com/wp-content/uploads/2019/10/08000621/MIGHTY-PORO.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed
-}
-
-.header2 {
-    height: 300px;
-    background: url('https://how2play.pl/wp-content/uploads/2019/10/legends-of-runeterra-poro-2.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed
-}
-
-.header .header-info {
-    padding-top: 100px;
-    width: 50%;
-    float: right;
-}
-
-.header .header-info .info-title {
-    font-weight: bold;
-    font-size: 50px
-}
-
-.header .header-info .info-title span {
-    font-weight: normal
-}
-
-.header .header-info .info-dir {
-    font-size: 40px;
-    color: black;
-    margin-bottom: 20px
-}
-
-.header .header-info .info-desc {
-    color: #000;
-    margin-bottom: 15px;
-    line-height: 1.8
-}
-
-.header .header-info .info-desc a {
-    text-decoration: none
-}
-.info-desc {
-  text-align: center;
-  font-size: 130%;
-  display: block;
-}
-
-* {
   margin: 0;
-  padding: 0;
-  outline: 0;
-  box-sizing: border-box;
-}
-
-.menu-area li a {
-  text-decoration: none;
-}
-
-.menu-area li {
-  list-style-type: none;
-}
-
-.custom-padding{
-  padding-top: 25px;
-}
-
-nav {
-  position: relative;
-  width: calc(100% - 60px);
-  margin: 0 auto;
-  padding: 10px 0;
+  font-family: BeaufortW01-Regular;
   background: #333;
-  z-index: 1;
-  text-align: right;
-  padding-right: 2%;
-}
-
-.logo {
-  width: 15%;
-  float: left;
-  text-transform: uppercase;
   color: #fff;
-  font-size: 25px;
-  text-align: left;
-  padding-left: 2%;
+  font-size: 1.1em;
+  line-height: 1.5;
+  text-align: center;
 }
 
-.menu-area li {
-  display: inline-block;
-}
-
-.menu-area a {
-  font-family: 'Gelasio', serif;
-  color: #fff;
-  font-weight: 300;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+img {
   display: block;
-  padding: 0 25px;
-  font-size: 14px;
-  line-height: 30px;
-  position: relative;
-  z-index: 1;
+  width: 100%;
+  height: auto;
 }
-.menu-area a:hover {
-  background: tomato;
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 1em 0;
+}
+
+p {
+  margin: 0;
+  padding: 1em 0;
+}
+
+
+.btn {
+  display: inline-block;
+  background: #333;
   color: #fff;
+  text-decoration: none;
+  padding: 1em 2em;
+  border: 1px solid #666;
+  margin: .5em 0;
 }
 
-.menu-area a:hover:after {
-  transform: translateY(-50%) rotate(-35deg);
+.btn:hover {
+  background: #eaeaea;
+  color: #333
 }
 
-nav:before {
+.artwork {
+  width: 300px;
+  float: left;
+
+}
+
+.black, .content-title{
+  color: black;
+}
+
+/* header for league kirb site */
+
+#showcase {
+  min-height: 450px;
+  color: #fff;
+  text-align: center;
+}
+
+#showcase .bg-image {
   position: absolute;
-  content: '';
-  border-top: 10px solid #333;
-  border-right: 10px solid #333;
-  border-left: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  top: 100%;
-  left: 0;
+  background: #333 url('https://static.invenglobal.com/upload/image/2019/11/17/i1574007251371949.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 450px;
+  z-index: -1;
+  opacity: 0.4;
 }
 
-nav:after {
-  position: absolute;
-  content: '';
-  border-top: 10px solid #333;
-  border-left: 10px solid #333;
-  border-right: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  top: 100%;
-  right: 0;
+#showcase h1 {
+  padding-top: 100px;
+  padding-bottom: 0;
 }
 
-.link-area
-{
-  position:fixed;
-  bottom:20px;
-  left:20px;  
-  padding:15px;
-  border-radius:40px;
-  background:tomato;
-}
-.link-area a
-{
-  text-decoration:none;
-  color:#fff;
-  font-size:25px;
+#showcase content-wrap{
+  padding: 0 1.5em;
 }
 
-.title{
-    font-size: 350%;
-    color: #c49250;
-}
+/* section a */
 
-.space{
-    display: block;
-}
-
-.responsive{
-    width: 100%;
-    border: 0;
+#section-a {
+  background: #eaeaea;
+  color: 333;
+  padding-bottom: 3em;
 }
